@@ -26,20 +26,20 @@ worksheet_mapping = {
 }
 
 content_mapping = {
-    "工作日期": 6,
-    "工作時數": 9,
-    "工作內容": 10,
-    "完成度": 15,
-    "工作內容細節": 17,
-    "心得": 22,
-    "任務來源": 27,
-    "交接/合作對象": 29,
-    "資料來源": 31,
-    "資料存放位置": 34
+    "工作日期": 2,
+    "工作時數": 3,
+    "工作內容": 4,
+    "完成度": 5,
+    "工作內容細節": 6,
+    "心得": 7,
+    "任務來源": 8,
+    "交接/合作對象": 9,
+    "資料來源": 10,
+    "資料存放位置": 11
 }
 
 def find_last_non_empty_row_index(col_data):
-    start_row = 6
+    start_row = 4
     col_data_from_sixth_row = col_data[start_row - 1:]
     last_non_empty_row_index = start_row + len(col_data_from_sixth_row) - 1
     while last_non_empty_row_index >= start_row and not col_data_from_sixth_row[last_non_empty_row_index - start_row].strip():
